@@ -85,7 +85,8 @@ layout: table_wrappers
   </nav>
 </div>
 <!-- GENDO END CommonHeader -->
-  <div class="side-bar">
+<div style="display: flex;">
+  <div class="side-bar" style="position: sticky; top: 0; align-self: stretch;">
     <div class="site-header">
       <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
       <a href="#" id="menu-button" class="site-button">
@@ -142,7 +143,7 @@ layout: table_wrappers
       </footer>
     {% endif %}
   </div>
-  <div class="main" id="top">
+  <div class="main" id="top" style="margin-left: initial;">
     <div id="main-header" class="main-header">
       {% if site.search_enabled != false %}
 
@@ -260,6 +261,7 @@ layout: table_wrappers
       <div class="search-overlay"></div>
     {% endif %}
   </div>
+</div>
 
   {% if site.mermaid %}
   <script>
