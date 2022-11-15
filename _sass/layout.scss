@@ -8,7 +8,9 @@
 
   @include mq(md) {
     flex-wrap: nowrap;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    align-self: stretch;
     width: $nav-width-md;
     height: 100%;
     flex-direction: column;
@@ -26,7 +28,6 @@
   @include mq(md) {
     position: relative;
     max-width: $content-width;
-    margin-left: $nav-width-md;
   }
 
   @include mq(lg) {
